@@ -60,6 +60,10 @@ int main(int argc, char** argv) {
 
   double desired_yaw = std::stof(args.at(4)) * DEG_2_RAD;
 
+  for(int i = 0; i < 4; i++){
+    std::cout<<args.at(i)<<std::endl;
+  }
+
   mav_msgs::msgMultiDofJointTrajectoryFromPositionYaw(desired_position,
       desired_yaw, &trajectory_msg);
 

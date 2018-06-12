@@ -57,7 +57,7 @@ int main(int argc, char** argv) {
   ros::NodeHandle nh;
 
   ROS_INFO("Started waypoint_publisher.");
-
+  std::cout<<"-------------------------------------------------------------------------------------------"<<std::endl;
   ros::V_string args;
   ros::removeROSArgs(argc, argv, args);
 
